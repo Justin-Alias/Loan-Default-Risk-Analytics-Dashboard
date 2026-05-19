@@ -126,7 +126,9 @@ SELECT * FROM [dbo].[Loan_default];
 ### DAX - Calculated Columns & Measures
 
 A dedicated **Measures Table** was created to organize all DAX logic cleanly:
+
 <div align="center">
+         
 | Measure / Column | Type | Description |
 |---|---|---|
 | `Year` | Calculated Column | Extracted year from `Loan Date` for time-series analysis |
@@ -137,7 +139,6 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | `YTD Loan Amount` | Measure | Year-to-date cumulative loan amount |
 | `Default Rate %` | Measure | Percentage of loans that defaulted within a segment |
 </div>
----
 
 ## 📊 Dashboard - 3-Page Report
 
