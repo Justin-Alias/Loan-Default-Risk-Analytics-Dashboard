@@ -108,7 +108,7 @@ SELECT * FROM [dbo].[Loan_default];
 </div>
 
 
-## 🔧 Data Transformation
+## Data Transformation
 
 ### Power Query — Cleaning & Validation
 
@@ -140,7 +140,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | `Default Rate %` | Measure | Percentage of loans that defaulted within a segment |
 </div>
 
-## 📊 Dashboard - 3-Page Report
+## Dashboard - 3-Page Report
 
 ### Page 1 - Loan Default & Overview
 
