@@ -146,6 +146,8 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 
 > High-level snapshot of loan volume, default rates, and income patterns across the portfolio.
 
+<div align="center">
+
 | Chart | Type | Insight |
 |---|---|---|
 | Loan Amount by Purpose | Bar Chart | Breakdown of total lending by loan purpose |
@@ -153,7 +155,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | Default Rate % by Employment Type | Column Chart | Which employment types carry the highest default risk |
 | Average Loan Amount by Age Group | Line / Bar | Lending exposure by borrower age segment |
 | Default Rate % by Year | Line Chart | Historical trend of default rates over time |
-
+</div>
 ---
 
 ### Page 2 - Applicant Demographics & Financial Profile
