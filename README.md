@@ -133,9 +133,9 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 
 ---
 
-## 📊 Dashboard — 3-Page Report
+## 📊 Dashboard - 3-Page Report
 
-### Page 1 — Loan Default & Overview
+### Page 1 - Loan Default & Overview
 
 > High-level snapshot of loan volume, default rates, and income patterns across the portfolio.
 
@@ -149,7 +149,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 
 ---
 
-### Page 2 — Applicant Demographics & Financial Profile
+### Page 2 - Applicant Demographics & Financial Profile
 
 > Deep-dive into borrower characteristics — credit health, age, education, and household profile.
 
@@ -163,7 +163,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 
 ---
 
-### Page 3 — Financial Risk Metrics
+### Page 3 - Financial Risk Metrics
 
 > Advanced risk intelligence — year-over-year trends, time-intelligence measures, and decomposition analysis.
 
