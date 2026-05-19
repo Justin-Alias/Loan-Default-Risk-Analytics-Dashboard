@@ -112,6 +112,8 @@ SELECT * FROM [dbo].[Loan_default];
 
 ### Power Query — Cleaning & Validation
 
+<div align="center">
+
 | Task | Action |
 |---|---|
 | Data types | Assigned correct types to all 19 columns |
@@ -119,11 +121,12 @@ SELECT * FROM [dbo].[Loan_default];
 | Null handling | Validated and addressed null/blank values across key fields |
 | Duplicates | Checked and removed duplicate records |
 | DateTime column | Added a `DateTime` field to support incremental refresh requirements |
+</div>
 
 ### DAX - Calculated Columns & Measures
 
 A dedicated **Measures Table** was created to organize all DAX logic cleanly:
-
+<div align="center">
 | Measure / Column | Type | Description |
 |---|---|---|
 | `Year` | Calculated Column | Extracted year from `Loan Date` for time-series analysis |
@@ -133,7 +136,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | `YOY Default Loan Amount Change` | Measure | Year-over-year variance in defaulted loan amounts |
 | `YTD Loan Amount` | Measure | Year-to-date cumulative loan amount |
 | `Default Rate %` | Measure | Percentage of loans that defaulted within a segment |
-
+</div>
 ---
 
 ## 📊 Dashboard - 3-Page Report
