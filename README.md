@@ -184,7 +184,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | YOY Loan Amount Change by Year | Line Chart | Annual growth or contraction in total lending |
 | YOY Default Loan Amount Change by Year | Line Chart | Trending direction of default exposure |
 | YTD Loan Amount by Credit Score Bins & Marital Status | Matrix / Bar | Current-year lending segmented by risk and demographics |
-| Decomposition Tree — Loan Amount by Income Bracket & Employment Type | Decomposition Tree | Drill-down root-cause view of loan concentration |
+| Decomposition Tree - Loan Amount by Income Bracket & Employment Type | Decomposition Tree | Drill-down root-cause view of loan concentration |
 
 </div>
 
@@ -210,7 +210,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 |---|---|
 | `Loan_default.csv` | Source dataset - 255,347 loan records across 19 fields |
 | `SQL Queries/SQLQuery1.sql` | Database setup, user creation, and role assignment |
-| `Loans.pbix` | Power BI report — dataflow connection, DAX model, and 3-page dashboard |
+| `Loans.pbix` | Power BI report - dataflow connection, DAX model, and 3-page dashboard |
 | `Description of Dataset data & Project.txt` | Project scope, column definitions, and step-by-step walkthrough |
 
 </div>
