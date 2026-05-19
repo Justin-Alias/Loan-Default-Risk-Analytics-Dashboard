@@ -8,7 +8,7 @@
 ![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 ![Power Query](https://img.shields.io/badge/Power_Query-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 
-*Full-stack BI project — SQL Server ingestion, Power BI dataflow, DAX modelling, incremental refresh, and a 3-page risk intelligence dashboard built to help bank officials make smarter lending decisions.*
+*Full-stack BI project - SQL Server ingestion, Power BI dataflow, DAX modelling, incremental refresh, and a 3-page risk intelligence dashboard built to help bank officials make smarter lending decisions.*
 
 </div>
 
@@ -16,7 +16,7 @@
 
 ## Project Overview
 
-This project delivers an end-to-end loan risk analytics solution built on a **255,347-row real-world loan dataset**. It covers every layer of a production BI pipeline: local SQL Server setup, secure user access, a Power BI dataflow with scheduled refresh, DAX measure modelling, and a published 3-page interactive report — complete with incremental refresh configured for operational use.
+This project delivers an end-to-end loan risk analytics solution built on a **255,347-row real-world loan dataset**. It covers every layer of a production BI pipeline: local SQL Server setup, secure user access, a Power BI dataflow with scheduled refresh, DAX measure modelling, and a published 3-page interactive report - complete with incremental refresh configured for operational use.
 
 **Business Goal:** Equip bank officials with a data-driven tool to assess borrower risk and make informed loan approval decisions.
 
@@ -72,7 +72,7 @@ ALTER ROLE db_datareader ADD MEMBER data_user;
 SELECT * FROM [dbo].[Loan_default];
 ```
 
-> A least-privilege approach was applied — `data_user` is granted only `db_datareader` permissions, restricting access to read-only queries.
+> A least-privilege approach was applied - `data_user` is granted only `db_datareader` permissions, restricting access to read-only queries.
 
 ---
 
@@ -110,7 +110,7 @@ SELECT * FROM [dbo].[Loan_default];
 
 ## Data Transformation
 
-### Power Query — Cleaning & Validation
+### Power Query - Cleaning & Validation
 
 <div align="center">
 
@@ -208,7 +208,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 
 | File | Description |
 |---|---|
-| `Loan_default.csv` | Source dataset — 255,347 loan records across 19 fields |
+| `Loan_default.csv` | Source dataset - 255,347 loan records across 19 fields |
 | `SQL Queries/SQLQuery1.sql` | Database setup, user creation, and role assignment |
 | `Loans.pbix` | Power BI report — dataflow connection, DAX model, and 3-page dashboard |
 | `Description of Dataset data & Project.txt` | Project scope, column definitions, and step-by-step walkthrough |
@@ -232,5 +232,5 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 </div>
 
 <div align="center">
-<sub>Built to demonstrate a production-grade BI pipeline — from raw CSV ingestion through to a scheduled, incrementally-refreshed loan risk dashboard.</sub>
+<sub>Built to demonstrate a production-grade BI pipeline - from raw CSV ingestion through to a scheduled, incrementally-refreshed loan risk dashboard.</sub>
 </div>
