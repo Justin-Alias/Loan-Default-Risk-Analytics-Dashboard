@@ -24,7 +24,7 @@ This project delivers an end-to-end loan risk analytics solution built on a **25
 
 ## 🔄 End-to-End Pipeline
 
-<div align="center">
+```
 Loan_default.csv (255,347 rows)
          │
          ▼
@@ -48,7 +48,7 @@ Loan_default.csv (255,347 rows)
   Power BI Service (Workspace)
   └─ Report published
   └─ Semantic model refresh: daily (+1.5 hrs after dataflow)
-</div>
+```
 
 ---
 
