@@ -1,0 +1,41 @@
+Description of Dataset data: 
+- The Loan Default Dataset contains information about borrowers who have applied for loans, along with details about their financial status, loan characteristics, and repayment behaviour.
+
+Data Columns and Definitions:
+LoanID: A unique identifier for each loan in the dataset.
+Age: The borrower's age at the time the loan was issued.
+Income: The borrower's annual income
+LoanAmount: The total amount of the loan that the borrower is requesting or has been approved for.
+CreditScore: A numerical representation of the borrower's creditworthiness, typically ranging from 300 to 850. A higher credit score indicates the borrower is more likely to repay the debt.
+MonthsEmployed: The number of months the borrower has been employed at their current job or with their current employer.
+NumCreditLines: The total number of active credit lines (e.g., credit cards, loans) the borrower has at the time of applying for the loan.
+InterestRate: The annual percentage rate (APR) charged for borrowing the loan amount, usually expressed as a percentage.
+LoanTerm: The length of time (in months) over which the loan is to be repaid.
+DTIRatio: The Debt-to-Income ratio, which measures the borrower’debt payments relative to their income. A higher ratio can indicate greater financial stress.
+Education: The highest level of education the borrower has completed (e.g., High School, Bachelor’s, Master’s, etc.).
+EmploymentType: The type of employment the borrower is engaged in (e.g., Full-Time, Part-Time, Self-Employed, etc.).
+MaritalStatus: The marital status of the borrower (e.g., Single, Married, Divorced, etc.).
+HasMortgage: An  indicator (e.g., Yes/No) that shows whether the borrower has an existing mortgage on a property.
+HasDependents: An  indicator (e.g., Yes/No) that shows whether the borrower has dependents (children, other family members) to support.
+LoanPurpose: The primary reason for taking out the loan (e.g., Home Purchase, Debt Consolidation, Education, etc.).
+HasCoSigner: An  indicator (e.g., Yes/No) that shows whether the borrower has a co-signer for the loan (someone who agrees to take responsibility if the borrower defaults).
+Default: An  indicator (e.g., Yes/No) that shows whether the borrower defaulted on the loan or failed to make timely payments.
+Loan Date (DD/MM/YYYY): The date the loan was issued or originated.
+
+Goal: Create a PowerBI report to assist bank officials in determining who, they should and shouldn't give the loans too
+
+Steps:
+- Create the database on a local SQL server on my machine 
+- Download and upload the dataset the server
+- Create user logins to access the server 
+- Create a workspace within Power BI, and a data flow that connects to the SQL Server and the cleaned dataset 
+- Connect my workflow to PowerBI Desktop and inport the data 
+- Clean, validate and transform the data adding additional fields (Year) using DAX measures (Loan Amount By Purpose, Average Income by Employement Type)
+- Create a table for the measures
+- Create 3 pages (Loan default & Overview, Applicant Demographics & Financial Profile, Financial Risk Metrics)
+-Loan default & Overview has 5 charts (Loan Amount by Purpose, Average Income by Employment Type, Default Rate % by Employment Type, Average Loan Amount by Age Group, default Rate % by Year)
+- Applicant Demographics & Financial Profile has 5 charts (Median Loan Amount by Credit Score Category, Average Loan Amount (High Credit) by Age Groups and Marital Status, Total Loan (Adults) by Credit Score Bin, Total Loan (Middle Aged Adults) by Havee Mortage/Dependents, Number of Loans by Education Type)
+- Financial Risk Metrics has 4 charts (YOY Loan Amount Change by Year, YOY Default Loan Amount Change by Year, YTD Loan Amount By Credit Score Bins and Marital Status, A Decomposition Tree for Loan Amount by Income Bracket and Employment Type)
+- Schedule a daily refresh for the Dataflow
+- Setup a incremental Refresh (needed to adjust the data to include a DateTime column) that would refresh the past 10 days data and only retains the past 5 years
+- Published the report to the powerbi workspace i created earlier, and schedule a daily refresh for the semantic model on the report 1.5 hours after the data refresh
