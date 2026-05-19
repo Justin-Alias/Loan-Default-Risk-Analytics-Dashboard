@@ -1,4 +1,4 @@
-# 🏦 Loan Default Risk - Analytics Dashboard
+# Loan Default Risk - Analytics Dashboard
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 This project delivers an end-to-end loan risk analytics solution built on a **255,347-row real-world loan dataset**. It covers every layer of a production BI pipeline: local SQL Server setup, secure user access, a Power BI dataflow with scheduled refresh, DAX measure modelling, and a published 3-page interactive report — complete with incremental refresh configured for operational use.
 
@@ -22,7 +22,7 @@ This project delivers an end-to-end loan risk analytics solution built on a **25
 
 ---
 
-## 🔄 End-to-End Pipeline
+## End-to-End Pipeline
 
 ```
 Loan_default.csv (255,347 rows)
@@ -52,7 +52,7 @@ Loan_default.csv (255,347 rows)
 
 ---
 
-## 🗄️ SQL Server Setup
+## SQL Server Setup
 
 The `Loan` database was created on a local SQL Server instance and configured with a dedicated read-only user for Power BI connectivity:
 
@@ -76,7 +76,7 @@ SELECT * FROM [dbo].[Loan_default];
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 **File:** `Loan_default.csv`
 **Rows:** 255,347 loan records
@@ -156,11 +156,12 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | Average Loan Amount by Age Group | Line / Bar | Lending exposure by borrower age segment |
 | Default Rate % by Year | Line Chart | Historical trend of default rates over time |
 </div>
----
 
 ### Page 2 - Applicant Demographics & Financial Profile
 
 > Deep-dive into borrower characteristics — credit health, age, education, and household profile.
+
+<div align="center">
 
 | Chart | Type | Insight |
 |---|---|---|
@@ -170,11 +171,13 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | Total Loan (Middle-Aged Adults) by Mortgage/Dependents | Stacked Bar | Financial obligations impact on loan volume |
 | Number of Loans by Education Type | Donut / Bar | Loan count segmented by education level |
 
----
+</div>
 
 ### Page 3 - Financial Risk Metrics
 
 > Advanced risk intelligence — year-over-year trends, time-intelligence measures, and decomposition analysis.
+
+<div align="center">
 
 | Chart | Type | Insight |
 |---|---|---|
@@ -183,9 +186,11 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | YTD Loan Amount by Credit Score Bins & Marital Status | Matrix / Bar | Current-year lending segmented by risk and demographics |
 | Decomposition Tree — Loan Amount by Income Bracket & Employment Type | Decomposition Tree | Drill-down root-cause view of loan concentration |
 
----
+</div>
 
-## 🔁 Refresh & Scheduling
+## Refresh & Scheduling
+
+<div align="center">
 
 | Layer | Schedule | Details |
 |---|---|---|
@@ -195,9 +200,11 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 
 > Incremental refresh required adding a `DateTime` column to the dataset to satisfy Power BI's `RangeStart` / `RangeEnd` parameter requirements.
 
----
+</div>
 
-## 📁 Project Files
+## Project Files
+
+<div align="center">
 
 | File | Description |
 |---|---|
@@ -206,9 +213,11 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | `Loans.pbix` | Power BI report — dataflow connection, DAX model, and 3-page dashboard |
 | `Description of Dataset data & Project.txt` | Project scope, column definitions, and step-by-step walkthrough |
 
----
+</div>
 
-## 🛠️ Technologies
+## Technologies
+
+<div align="center">
 
 | Tool | Purpose |
 |---|---|
@@ -220,7 +229,7 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | **DAX** | Calculated columns, measures, time-intelligence, and YOY logic |
 | **Power BI Service** | Workspace publishing, incremental refresh configuration, and semantic model scheduling |
 
----
+</div>
 
 <div align="center">
 <sub>Built to demonstrate a production-grade BI pipeline — from raw CSV ingestion through to a scheduled, incrementally-refreshed loan risk dashboard.</sub>
