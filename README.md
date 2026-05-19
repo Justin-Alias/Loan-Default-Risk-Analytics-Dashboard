@@ -80,7 +80,7 @@ SELECT * FROM [dbo].[Loan_default];
 
 **File:** `Loan_default.csv`
 **Rows:** 255,347 loan records
-
+<div align="center">
 | Column | Type | Description |
 |---|---|---|
 | `LoanID` | String | Unique loan identifier |
@@ -102,7 +102,7 @@ SELECT * FROM [dbo].[Loan_default];
 | `HasCoSigner` | Boolean | Co-signer present (Yes/No) |
 | `Default` | Boolean | Loan defaulted (1 = Yes, 0 = No) |
 | `Loan Date` | Date | Loan issuance date (DD/MM/YYYY) |
-
+</div>
 ---
 
 ## 🔧 Data Transformation
