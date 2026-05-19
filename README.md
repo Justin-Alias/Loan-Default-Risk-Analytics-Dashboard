@@ -1,4 +1,4 @@
-# 🏦 Loan Default Risk — Analytics Dashboard
+# 🏦 Loan Default Risk - Analytics Dashboard
 
 <div align="center">
 
