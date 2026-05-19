@@ -117,7 +117,7 @@ SELECT * FROM [dbo].[Loan_default];
 | Duplicates | Checked and removed duplicate records |
 | DateTime column | Added a `DateTime` field to support incremental refresh requirements |
 
-### DAX — Calculated Columns & Measures
+### DAX - Calculated Columns & Measures
 
 A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 
