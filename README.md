@@ -80,30 +80,33 @@ SELECT * FROM [dbo].[Loan_default];
 
 **File:** `Loan_default.csv`
 **Rows:** 255,347 loan records
-<div align="center">
-| Column | Type | Description |
-|---|---|---|
-| `LoanID` | String | Unique loan identifier |
-| `Age` | Integer | Borrower age at loan issuance |
-| `Income` | Decimal | Annual borrower income |
-| `LoanAmount` | Decimal | Total approved loan amount |
-| `CreditScore` | Integer | Creditworthiness score (300–850) |
-| `MonthsEmployed` | Integer | Tenure at current employer (months) |
-| `NumCreditLines` | Integer | Number of active credit lines |
-| `InterestRate` | Decimal | Annual percentage rate (APR) |
-| `LoanTerm` | Integer | Repayment period (months) |
-| `DTIRatio` | Decimal | Debt-to-Income ratio |
-| `Education` | Category | Highest education level completed |
-| `EmploymentType` | Category | Full-Time, Part-Time, Self-Employed, Unemployed |
-| `MaritalStatus` | Category | Single, Married, Divorced |
-| `HasMortgage` | Boolean | Existing mortgage (Yes/No) |
-| `HasDependents` | Boolean | Has dependents (Yes/No) |
-| `LoanPurpose` | Category | Home, Auto, Business, Education, Debt Consolidation, Other |
-| `HasCoSigner` | Boolean | Co-signer present (Yes/No) |
-| `Default` | Boolean | Loan defaulted (1 = Yes, 0 = No) |
-| `Loan Date` | Date | Loan issuance date (DD/MM/YYYY) |
-</div>
----
+
+<table align="center">
+    <tr>
+        <th>Column</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    <tr><td><code>LoanID</code></td><td>String</td><td>Unique loan identifier</td></tr>
+    <tr><td><code>Age</code></td><td>Integer</td><td>Borrower age at loan issuance</td></tr>
+    <tr><td><code>Income</code></td><td>Decimal</td><td>Annual borrower income</td></tr>
+    <tr><td><code>LoanAmount</code></td><td>Decimal</td><td>Total approved loan amount</td></tr>
+    <tr><td><code>CreditScore</code></td><td>Integer</td><td>Creditworthiness score (300–850)</td></tr>
+    <tr><td><code>MonthsEmployed</code></td><td>Integer</td><td>Tenure at current employer (months)</td></tr>
+    <tr><td><code>NumCreditLines</code></td><td>Integer</td><td>Number of active credit lines</td></tr>
+    <tr><td><code>InterestRate</code></td><td>Decimal</td><td>Annual percentage rate (APR)</td></tr>
+    <tr><td><code>LoanTerm</code></td><td>Integer</td><td>Repayment period (months)</td></tr>
+    <tr><td><code>DTIRatio</code></td><td>Decimal</td><td>Debt-to-Income ratio</td></tr>
+    <tr><td><code>Education</code></td><td>Category</td><td>Highest education level completed</td></tr>
+    <tr><td><code>EmploymentType</code></td><td>Category</td><td>Full-Time, Part-Time, Self-Employed, Unemployed</td></tr>
+    <tr><td><code>MaritalStatus</code></td><td>Category</td><td>Single, Married, Divorced</td></tr>
+    <tr><td><code>HasMortgage</code></td><td>Boolean</td><td>Existing mortgage (Yes/No)</td></tr>
+    <tr><td><code>HasDependents</code></td><td>Boolean</td><td>Has dependents (Yes/No)</td></tr>
+    <tr><td><code>LoanPurpose</code></td><td>Category</td><td>Home, Auto, Business, Education, Debt Consolidation, Other</td></tr>
+    <tr><td><code>HasCoSigner</code></td><td>Boolean</td><td>Co-signer present (Yes/No)</td></tr>
+    <tr><td><code>Default</code></td><td>Boolean</td><td>Loan defaulted (1 = Yes, 0 = No)</td></tr>
+    <tr><td><code>Loan Date</code></td><td>Date</td><td>Loan issuance date (DD/MM/YYYY)</td></tr>
+</table>
 
 ## 🔧 Data Transformation
 
