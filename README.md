@@ -198,9 +198,9 @@ A dedicated **Measures Table** was created to organize all DAX logic cleanly:
 | **Semantic Model** (Report dataset) | Daily (+1.5 hrs) | Refreshes 1.5 hours after dataflow completes to ensure data availability |
 | **Incremental Refresh** | Rolling window | Refreshes the past **10 days** of data; retains the past **5 years** of history |
 
-> Incremental refresh required adding a `DateTime` column to the dataset to satisfy Power BI's `RangeStart` / `RangeEnd` parameter requirements.
-
 </div>
+
+> Incremental refresh required, adding a `DateTime` column to the dataset to satisfy Power BI's `RangeStart` / `RangeEnd` parameter requirements.
 
 ## Project Files
 
